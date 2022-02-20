@@ -1,0 +1,69 @@
+﻿@page "{id:int}"
+@model Jachty.Pages.OrderModel
+@{
+    ViewData["Title"] = "Zarezerwuj";
+}
+
+<ol id="orderProcess">
+    <li><span class="step-number">1</span>Wybór</li>
+    <li class="current"><span class="step-number">2</span>Dane</li>
+    <li><span class="step-number">3</span>Podsumowanie</li>
+</ol>
+<h1>Zarezerwuj: @Model.Jacht.Nazwa</h1>
+
+<form method="post">
+    <div class="row">
+        <div class="col-3">
+            <img src="~/Images/Products/Thumbnails/@Model.Jacht.ImageName" class="img-fluid img-thumbnail" alt="Image of @Model.Jacht.Nazwa"/>
+        </div>
+        <div class="col-9">
+            <ul class="orderPageList" data-role="listview">
+                <li>
+                    <div>
+                        <p class="description">@Model.Jacht.Opis</p>
+                    </div>                
+                </li>
+                <li class="email">
+                    <div class="form-group">
+                        <label asp-for="Imie"></label>
+                        <input asp-for="Imie" class="form-control form-control-sm" />                
+                        <span asp-validation-for="Imie"></span>
+                    </div>
+                </li>
+                <li class="email">
+                    <div class="form-group">
+                        <label asp-for="OrderEmail"></label>
+                        <input asp-for="OrderEmail" class="form-control form-control-sm" />                
+                        <span asp-validation-for="OrderEmail"></span>
+                    </div>
+                </li>
+                <li class="email">
+                    <div class="form-group">
+                        <label asp-for="Telefon"></label>
+                        <input asp-for="Telefon" class="form-control form-control-sm" />                
+                        <span asp-validation-for="Telefon"></span>
+                    </div>
+                </li>
+                <li class="email">
+                    <div class="form-group">
+                        <label asp-for="CzasStart"></label>
+                        <input asp-for="CzasStart" class="form-control form-control-sm" />                
+                        <span asp-validation-for="CzasStart"></span>
+                    </div>
+                </li>
+                <li class="email">
+                    <div class="form-group">
+                        <label asp-for="CzasKoniec"></label>
+                        <input asp-for="CzasKoniec" class="form-control form-control-sm" />                
+                        <span asp-validation-for="CzasKoniec"></span>
+                    </div>
+                </li>
+            </ul>
+            <p class="actions">
+                <input type="hidden" asp-for="Jacht.JachtID" />
+                <button class="btn btn-danger order-button">Zarezerwuj</button>
+            </p>
+        </div>
+    </div>
+</form>
+}

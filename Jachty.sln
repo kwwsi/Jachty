@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jachty", "Jachty\Jachty.csproj", "{ED609CB6-D647-4377-8C7E-6B2261E4AE83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED609CB6-D647-4377-8C7E-6B2261E4AE83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED609CB6-D647-4377-8C7E-6B2261E4AE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED609CB6-D647-4377-8C7E-6B2261E4AE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED609CB6-D647-4377-8C7E-6B2261E4AE83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AFEA1F5-CCB8-41AC-95DE-D4631B7A46FB}
+	EndGlobalSection
+EndGlobal
